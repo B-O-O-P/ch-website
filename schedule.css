@@ -65,10 +65,17 @@
     color: #F4F3FC !important;
 }
 
+.dhx_scheduler_week .dhx_cal_data .dhx_cal_event .dhx_header,
+.dhx_scheduler_week .dhx_cal_data .dhx_cal_event .dhx_title,
+.dhx_scheduler_week .dhx_cal_data .dhx_cal_event .dhx_body {
+    background-color: #FFFFFF !important;
+}
+
+
 .dhtmlXTooltip {
     font-family: 'Montserrat', sans-serif !important;
     color: #222222 !important;
-    background-color: #F4F3FC !important;
+    background-color: #FFFFFF !important;
 }
 
 .dhx_cal_header {
