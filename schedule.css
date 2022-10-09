@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dhx_cal_container {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.dhx_cal_navline, .dhx_cal_data, .dhx_cal_header, .dhx_multi_day, .dhx_cal_scale_placeholder {
+    position: relative !important;
+    flex-shrink: 0 !important;
+
+    right: unset !important;
+    left: unset !important;
+    top: unset !important;
+    bottom: unset !important;
+    width: 100% !important;
+}
+
+.dhx_cal_scale_placeholder {
+    display: none !important;
+}
+
+.dhx_cal_data {
+    height: unset !important;
+    flex-grow: 1 !important;
+
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%) !important;
+}
+
+.dhx_cal_tab {
+    font-weight: 600 !important;
+}
+
+.dhx_cal_prev_button {
+    background-image: url("https://raw.githubusercontent.com/B-O-O-P/ch-website/master/icons/arrow_left.svg");
+}
+
+.dhx_cal_next_button {
+    background-image: url("https://raw.githubusercontent.com/B-O-O-P/ch-website/master/icons/arrow_right.svg");
+}
+
+.event {
+    overflow: hidden !important;
+
+    background-color: #ffffff !important;
+    color: #11112C !important;
+}
+
+.dhx_cal_event .dhx_body {
+    color: #11112C !important;
+    background-color: #ffffff !important;
+}
+
+.dhx_cal_event .dhx_title {
+    color: #11112C !important;
+    background-color: #ffffff !important;
+}
+
+.dhx_now, .dhx_now .dhx_month_head, .dhx_now .dhx_month_body {
+    background-color: #BE1649 !important;
+    color: #F4F3FC !important;
+}
+
+.dhx_scale_holder_now {
+    background-color: #ffffff !important;
+}
+
+.dhtmlXTooltip {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #222222 !important;
+    background-color: #ffffff !important;
+}
+
+.dhx_cal_header {
+    display: flex !important;
+}
+
+.dhx_scheduler_week .dhx_cal_header {
+    margin-left: 50px !important;
+}
+
+.dhx_scale_bar {
+    position: relative !important;
+
+    flex-shrink: 0 !important;
+    right: unset !important;
+    left: unset !important;
+    top: unset !important;
+    bottom: unset !important;
+}
+
+.dhx_scheduler_day .dhx_cal_header .dhx_scale_bar {
+    width: 100% !important;
+}
+
+.dhx_cal_event_line_start {
+    margin-left: 2px !important;
+}
+
+.dhx_cal_prev_button, .dhx_cal_next_button, .dhx_cal_today_button, .dhx_cal_date, .dhx_cal_tab {
+    position: relative !important;
+}
+
+.dhx_cal_navline {
+    display: grid !important;
+    grid-template-areas: "tab_first tab_middle tab_last date prev_button today_button next_button" !important;
+    grid-template-rows: 1fr !important;
+    grid-template-columns: 88px 88px 88px 1fr 30px 82px 30px !important;
+    padding: 0 16px !important;
+}
+
+.dhx_cal_navline div {
+    position: relative !important;
+
+    right: unset !important;
+    left: unset !important;
+    top: unset !important;
+    bottom: unset !important;
+}
+
+.dhx_cal_prev_button {
+    grid-area: prev_button !important;
+}
+
+.dhx_cal_next_button {
+    grid-area: next_button !important;
+}
+
+.dhx_cal_today_button {
+    grid-area: today_button !important;
+    font-weight: 600 !important;
+}
+
+.dhx_cal_date {
+    grid-area: date !important;
+    padding-right: 116px !important;
+}
+
+.day_tab {
+    grid-area: tab_first !important;
+}
+
+.week_tab {
+    grid-area: tab_middle !important;
+}
+
+.month_tab {
+    grid-area: tab_last !important;
+}
+
+@media (max-width: 1024px) {
+    .dhx_cal_navline {
+        grid-template-areas: "tab_first tab_middle tab_last"
+                             "date date date"
+                             "prev_button today_button next_button" !important;
+        grid-template-rows: 1fr 1fr 1fr !important;
+        grid-template-columns: 88px 88px 88px !important;
+        gap: 8px 0 !important;
+        justify-content: center !important;
+        height: 112px !important;
+        padding: 0 !important;
+    }
+
+    .dhx_cal_prev_button {
+        justify-self: flex-end !important;
+    }
+
+    .dhx_cal_next_button {
+        justify-self: flex-start !important;
+    }
+
+    .dhx_cal_header {
+        margin-top: 8px !important;
+    }
+}
