@@ -46,18 +46,18 @@
 .event {
     overflow: hidden !important;
 
-    background-color: #ffffff !important;
+    background-color: #F4F3FC !important;
     color: #11112C !important;
 }
 
 .dhx_cal_event .dhx_body {
     color: #11112C !important;
-    background-color: #ffffff !important;
+    background-color: #F4F3FC !important;
 }
 
 .dhx_cal_event .dhx_title {
     color: #11112C !important;
-    background-color: #ffffff !important;
+    background-color: #F4F3FC !important;
 }
 
 .dhx_now, .dhx_now .dhx_month_head, .dhx_now .dhx_month_body {
@@ -68,7 +68,7 @@
 .dhtmlXTooltip {
     font-family: 'Montserrat', sans-serif !important;
     color: #222222 !important;
-    background-color: #ffffff !important;
+    background-color: #F4F3FC !important;
 }
 
 .dhx_cal_header {
